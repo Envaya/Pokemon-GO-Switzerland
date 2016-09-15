@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 
 * {
 	margin: 0;
@@ -19,70 +19,93 @@ header {
 	margin-top: 0px;
 	margin-left: 0px;
 	width: 100%;
-
+	z-index: 600;
 
 }
 
 .header-bar-upper {
-
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-image: url("../img/pokemon-go-header-upper.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-sizing: border-box;
+	background-position: center center;
 	border-bottom: 3px solid #5d4037;
 	-webkit-box-shadow: 0px 15px 5px -1px rgba(59,38,8,0.1);
 	-moz-box-shadow: 0px 15px 5px -1px rgba(59,38,8,0.1);
 	box-shadow: 0px 15px 5px -1px rgba(59,38,8,0.1);
-	
-}
-
-header h1 {
-	text-transform: uppercase;
-	text-decoration: bold;
-	display: inline-block;
-	color: white;
-	letter-spacing: 0.2em;
-	font-size: 1.5vw;
 
 }
 
-@mediascreen (max-width: 760px)
-{
-
-header h1 {
-	
-	font-size: 1em;
-}
-
+.logo-wrap {
+	flex: 1;
+	height: 100%;
+	line-height: 100px;
 
 }
 
-header h1 span {}
 
 .logo-header {
-	display: inline-block;
+	height: 80%;
+	margin-left: 10px;
+
+	vertical-align: middle;
+}
+
+
+header h1 {
+	flex: 3;
+	text-transform: uppercase;
+	text-decoration: bold;
+	color: white;
+	letter-spacing: 0.2em;
+	font-size: 2vw;
+
+}
+
+.emtpy-div {
+	flex: 1;
 	height: 100%;
-	padding: 0px 1em;
-	
 }
 
-.logo-header a {
-	text-decoration: none;
-
-}
-
-.logo-header a img {
-
-	
-	width: 80%;
-	margin: 0.35em 0em;
 
 
+
+
+.header-inbetween-bar {
+height: 25px;
+width: 100%;
+background-image: url("../img/inbetween-header.png");
 
 }
 
-.index-header-nav {
+
+
+.test {
+	position: relative;
+	top: 128px;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	height: 100vh;
+}
+
+. {
+	margin: 200px 10% 100px 10%;
+	height: 1000px;
+
+}
+
+
+
+
+.index-header-nav{
 	display: none;
 }
+
 
 /****** header-end *********/
